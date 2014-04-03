@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Jasmine Test Runner</title>
+        <!-- Jasmine includes -->
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/jasmine/1.3.1/jasmine.css">
+        <script type="text/javascript" src="http://static.plaync.co.kr/common/js/lib/jquery_171_min.js"></script>
+
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jasmine/1.3.1/jasmine.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jasmine/1.3.1/jasmine-html.js"></script>
+        
+        <!-- Source files -->
+ 		<!--script type="text/javascript" src="../../curation.lib.js"></script-->
+        <!--script type="text/javascript" src="../../curation.min.js"></script-->
+<script src="../js/lib/initIE.js"></script>
+<script src="./js/lib/imagesloaded.pkgd.min.js"></script>
+<script src="./js/lib/masonry.pkgd.min.js"></script>
+<script src="./js/lib/angular-1.0.1.min.js"></script>
+<script src="./js/lib/angular-cookies-1.0.1.min.js"></script>
+<script src="./js/controllers/commonControllers.js"></script>
+<script src="./js/controllers/cardController.js"></script>
+<script src="./js/controllers/characterBoxController.js"></script>
+<script src="./js/directives/directives.js"></script>
+<script src="./js/directives/curationMasonry.js"></script>
+<script src="./js/directives/trailer.js"></script>
+<script src="./js/directives/curationScrolling.js"></script>
+<script src="./js/directives/curationLoading.js"></script>
+<script src="./js/directives/curationCard.js"></script>
+<script src="./js/directives/curationVideo.js"></script>
+<script src="./js/directives/curationResize.js"></script>
+<script src="./js/directives/characterBox.js"></script>
+<script src="./js/directives/cardComment.js"></script>
+<script src="./js/filters/filters.js"></script>
+<script src="./js/filters/timeage.js"></script>
+<script src="./js/services/services.js"></script>
+<script src="./js/services/pageCheck.js"></script>
+<script src="./js/services/dimmed.js"></script>
+<script src="./js/services/query.js"></script>
+<script src="./js/services/goLogin.js"></script>
+<script src="./js/services/cardUrl.js"></script>
+<script src="./js/app.js"></script>
+
+        <!-- Spec files -->
+        <script type="text/javascript" src="cardComment.directive.test.js"></script>
+    </head>
+ 
+     <body>
+        <script type="text/javascript">
+            jasmine.getEnv().addReporter(new jasmine.TrivialReporter());
+            jasmine.getEnv().execute();
+        </script>
+    </body>
+</html>

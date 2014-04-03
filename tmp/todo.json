@@ -1,0 +1,9 @@
+[
+	{
+		'checked': 'checked',
+		'work': '1'
+	},{
+		'checked': '',
+		'work': '2'
+	}
+]
