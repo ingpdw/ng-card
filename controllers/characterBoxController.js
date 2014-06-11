@@ -3,22 +3,9 @@
 angular.module('curation.characterBoxControllers', [ 'curation.goLogin' ]).
   controller('characterBoxCtrl', [ '$scope', '$query', '$qurl', '$login', '$timeout', 
   	function( $scope, $query, $qUrl, $login, $timeout ) {
-  		$scope.characters = [{
-			"job":"FORCEMASTER",
-		    "jobName":"기공사",
-		    "characterName":"으헹헹",
-		    "serverName":"QA02",
-		    "level":40,
-		    "masteryLevel":0,
-		    "masteryFactionCode":"FACTION_NONE",
-		    "masteryFaction":"",
-		    "isPlaying":false,
-		    "lastPlayEndTime":"2014.02.20 16:24:13",
-		    "zoneId":3000,
-		    "checked":false,
-		    'cssName': 'tab_forcemaster' 				
-		}];
+  		$scope.characters = [];
 
+		/*
 		$scope.getData = function( charNm ){	
 			$query.getJsonp( $qUrl.getCharacterList(), {
 				cn:  charNm || ''
@@ -73,9 +60,9 @@ angular.module('curation.characterBoxControllers', [ 'curation.goLogin' ]).
 	   			});
 
 			});			
-		};
+		};*/
 
-		/*
+		
 		$scope.getData = function( charNm ){
 			$.ajax({ 
 				type: 'post',
@@ -109,5 +96,5 @@ angular.module('curation.characterBoxControllers', [ 'curation.goLogin' ]).
 				}
 			});
 
-		}*/		
+		}		
   }]);
